@@ -1,0 +1,1 @@
+In this foldar overlay of ground truth and predicted mask with orignal image will be generated. 
