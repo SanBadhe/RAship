@@ -91,8 +91,8 @@ callbacks = [ReduceLROnPlateau(monitor='loss',
 							 save_best_only=True)]
 model.fit_generator(myGene, steps_per_epoch=300, epochs=4, callbacks=callbacks)
 
-testGene = testGenerator("/data1/test1")
+testGene = testGenerator("/data1/test")
 model = unet()
 model.load_weights("unet_golden.hdf5")
 results = model.predict_generator(testGene, 30, verbose=1)
-saveResult("/data1/test1", results)
+saveResult("/data1/test", results)
