@@ -1,0 +1,1 @@
+In this folder we keep all ground truth mask for training. Name of mask and orignal image should be same.
